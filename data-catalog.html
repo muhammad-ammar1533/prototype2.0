@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Catalog | City of Windsor Open Data Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>City of Windsor Open Data Portal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="data-catalog.html">Data Catalog</a></li>
+                    <li><a href="data-management.html">Data Management</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for datasets..." onkeyup="searchForData()">
+            <button onclick="searchForData()">Search</button>
+        </div>
+        <div class="categories">
+            <button class="category-button">Community</button>
+            <button class="category-button">Infrastructure</button>
+            <button class="category-button">Environment</button>
+        </div>
+        <div id="data-list" class="data-list">
+            <div class="data-item card">
+                <h3>Community Centers</h3>
+                <p class="category">Community</p>
+                <p>Find locations and details of community centers.</p>
+                <a href="#" download="community_centers.csv">Download CSV</a>
+            </div>
+            <div class="data-item card">
+                <h3>Garbage Collection Schedule</h3>
+                <p class="category">Infrastructure</p>
+                <p>Information on garbage collection routes and schedules.</p>
+                <a href="#" download="garbage_collection_schedule.csv">Download CSV</a>
+            </div>
+            <div class="data-item card">
+                <h3>Bus Routes and Stops</h3>
+                <p class="category">Community</p>
+                <p>Check the bus routes and stop locations in the city.</p>
+                <a href="#" download="bus_routes_stops.csv">Download CSV</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>City of Windsor &copy; 2024</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

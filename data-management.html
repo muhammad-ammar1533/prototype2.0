@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Management | City of Windsor Open Data Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>City of Windsor Open Data Portal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="data-catalog.html">Data Catalog</a></li>
+                    <li><a href="data-management.html">Data Management</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <h2>Data Management</h2>
+        <div class="upload-section">
+            <h3>Upload Dataset</h3>
+            <form id="upload-form">
+                <label for="dataset-title">Title:</label><br>
+                <input type="text" id="dataset-title" name="title" placeholder="Enter dataset title" required><br><br>
+                <label for="dataset-category">Category:</label><br>
+                <input type="text" id="dataset-category" name="category" placeholder="Enter dataset category" required><br><br>
+                <label for="dataset-description">Description:</label><br>
+                <textarea id="dataset-description" name="description" rows="4" placeholder="Enter dataset description" required></textarea><br><br>
+                <label for="dataset-file">Choose File:</label><br>
+                <input type="file" id="dataset-file" name="file" required><br><br>
+                <button type="submit">Upload Dataset</button>
+            </form>
+        </div>
+        <div class="download-section">
+            <h3>Available Datasets</h3>
+            <table id="dataset-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Community Centers</td>
+                        <td>Public Services</td>
+                        <td>Details of community centers in the city.</td>
+                        <td><a href="#" download="community_centers.csv">Download CSV</a></td>
+                    </tr>
+                    <tr>
+                        <td>Garbage Collection Schedule</td>
+                        <td>Public Services</td>
+                        <td>Schedule for garbage collection by area.</td>
+                        <td><a href="#" download="garbage_collection_schedule.csv">Download CSV</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bus Routes and Stops</td>
+                        <td>Public Transport</td>
+                        <td>Bus routes and stops across the city.</td>
+                        <td><a href="#" download="bus_routes_stops.csv">Download CSV</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>City of Windsor &copy; 2024</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
